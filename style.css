@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.component{
+    width:400px;
+    height:420px;
+    border-radius: 20px;
+    color:white;
+    background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+   
+}
+.component_stars{
+    font-weight: 400;
+    border-radius:50%;
+    padding:0.7rem;
+    margin: 1.3rem;
+    background-color: hsl(213deg 12% 26%);
+    border:2px solid transparent;
+}
+
+.component_heading{
+    margin-left: 1.5rem;
+    color:hsl(0, 0%, 100%);
+}
+
+.component_para{
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    font-size: 15px;
+    color:hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+.component_ratings{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.component_ratings-value{
+    width:3rem;
+    height:3rem;
+    color:hsl(216, 12%, 54%);
+    font-weight: 700;
+    background-color: hsl(213, 19%, 18%);
+    border:2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.component_ratings-value:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
+
+.component_submit{
+    margin: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    width: 85%;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+    border:2px solid transparent;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.component_submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+
+.afterSubmit{
+    width:400px;
+    height:420px;
+    border-radius: 20px;
+    color:white;
+    background: linear-gradient(to top, hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+    display: none;
+   
+}
+
+.afterSubmit_img{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+}
+
+.afterSubmit_rate{
+    width: fit-content;
+    margin: 1.5rem auto;
+    background-color:hsl(213, 19%, 18%) ;
+    color:hsl(25, 97%, 53%);
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.afterSubmit_greet{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.afterSubmit_text{
+    text-align: center;
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    margin: 0.7rem;
+}
+
+.clicked{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+@media only screen and (max-width: 375px) {
+    .component{
+        width:350px;
+        height:450px;
+    }
+    .afterSubmit{
+        width:350px;
+        height:450px;
+    }
+  }
+
